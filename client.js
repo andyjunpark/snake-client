@@ -10,7 +10,7 @@ const connect = function () {
   // interpret incoming data as text
   conn.setEncoding("utf8");
   conn.on("connect", () => {
-    console.log('hi im andy');    // code that does something when the connection is first established
+    conn.write("Name: AJP");    // code that does something when the connection is first established
   });
   
   return conn;
